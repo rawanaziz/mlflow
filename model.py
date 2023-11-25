@@ -1,4 +1,4 @@
-
+            
 # model.py
 import numpy as np
 import mlflow
@@ -7,8 +7,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-mlflow.set_tracking_uri("http://<MLFLOW_SERVER_IP>:5000")  # Replace with your MLflow server IP
-mlflow.set_experiment("my_regression_experiment")
+m=mlflow.set_tracking_uri("https://dagshub.com/alnafesahr/mlflow.mlflow")  # Replace with your MLflow server IP
+mlflow.set_experiment(m)
 
 def train_model():
     mlflow.start_run()
